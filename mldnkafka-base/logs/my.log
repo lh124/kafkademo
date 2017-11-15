@@ -1,0 +1,2584 @@
+2017-11-14 11:06:51,643 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:06:51,861 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:06:51,861 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:13:31,800 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:13:32,011 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:13:32,011 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:13:36,837 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:13:36,842 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:13:36,842 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:13:37,185 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 1
+2017-11-14 11:13:37,187 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-topic-0]
+2017-11-14 11:15:54,006 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Marking the coordinator kafka-single:9095 (id: 2147483647 rack: null) dead
+2017-11-14 11:15:54,984 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:55,110 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:56,096 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:56,293 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:57,313 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:57,534 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:58,783 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:15:58,986 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:00,656 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:00,786 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:02,555 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:02,687 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:04,538 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:04,689 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:06,389 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:06,847 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:08,390 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:08,793 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:10,252 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:10,801 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:12,402 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:12,684 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:14,254 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:14,875 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:16,305 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:16,958 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:18,456 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:19,065 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:20,257 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:20,985 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:22,208 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:23,074 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:24,409 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:24,879 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:26,411 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:26,774 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:28,612 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:28,845 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:30,714 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:30,971 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:32,715 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:32,777 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:34,687 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:34,767 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:36,586 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:36,917 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:38,638 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:38,918 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:40,661 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:41,069 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:42,802 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:43,120 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:44,654 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:45,121 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:46,732 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:47,292 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:48,677 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:49,244 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:50,840 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:51,144 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:52,705 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:53,345 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:54,517 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:55,546 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:56,344 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:57,398 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:16:59,399 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 11:20:50,741 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:20:50,936 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:20:50,936 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:20:51,954 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:20:53,007 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:20:54,158 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:20:55,358 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:20:56,859 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:20:58,560 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:21:00,461 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:21:41,765 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:21:41,971 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:21:41,972 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:21:42,988 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:21:44,040 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:21:45,192 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:21:46,443 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:21:47,944 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node -1 could not be established. Broker may not be available.
+2017-11-14 11:22:23,582 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:22:23,777 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:22:23,777 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:22:24,024 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {mldn-1=LEADER_NOT_AVAILABLE}
+2017-11-14 11:22:24,189 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 11:25:37,619 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:25:37,831 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:25:37,832 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:25:39,024 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:25:39,028 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:25:39,028 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:25:39,142 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 1
+2017-11-14 11:25:39,144 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-1-0]
+2017-11-14 11:27:02,811 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:27:03,008 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:27:03,008 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:27:03,183 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 11:30:20,138 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:30:20,359 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:30:20,359 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:30:21,488 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:30:21,491 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:30:21,491 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:30:21,504 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 3
+2017-11-14 11:30:21,505 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-topic-0]
+2017-11-14 11:30:26,804 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-2
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:30:27,032 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:30:27,032 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:30:28,164 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-2] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:30:28,167 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-2] Revoking previously assigned partitions []
+2017-11-14 11:30:28,167 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-2] (Re-)joining group
+2017-11-14 11:30:28,182 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-2] Successfully joined group with generation 1
+2017-11-14 11:30:28,183 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-2] Setting newly assigned partitions [mldn-topic-0]
+2017-11-14 11:30:33,087 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-3
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:30:33,325 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:30:33,325 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:30:34,453 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-3] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:30:34,455 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-3] Revoking previously assigned partitions []
+2017-11-14 11:30:34,455 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-3] (Re-)joining group
+2017-11-14 11:30:34,474 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-3] Successfully joined group with generation 1
+2017-11-14 11:30:34,475 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-3] Setting newly assigned partitions [mldn-topic-0]
+2017-11-14 11:30:38,986 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:30:39,182 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:30:39,182 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:30:39,336 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 11:32:53,973 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:32:54,186 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:32:54,186 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:32:55,325 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:32:55,327 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:32:55,327 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:32:55,347 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 5
+2017-11-14 11:32:55,348 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-topic-0]
+2017-11-14 11:32:57,367 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:32:57,592 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:32:57,592 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:32:58,725 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:32:58,727 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:32:58,727 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:32:59,632 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:32:59,843 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:32:59,844 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:33:00,983 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:33:00,985 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:33:00,985 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:33:01,868 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-topic-0]
+2017-11-14 11:33:01,869 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:33:01,884 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 6
+2017-11-14 11:33:01,884 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 6
+2017-11-14 11:33:01,885 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions []
+2017-11-14 11:33:01,885 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 6
+2017-11-14 11:33:01,887 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions []
+2017-11-14 11:33:01,887 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-topic-0]
+2017-11-14 11:33:14,311 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:33:14,501 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:33:14,501 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:33:14,644 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 11:35:57,526 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:35:57,749 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:35:57,749 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:35:58,896 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:35:58,898 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:35:58,898 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:35:58,917 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 8
+2017-11-14 11:35:58,918 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-2, mldn-three-1, mldn-three-0]
+2017-11-14 11:36:00,539 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:36:00,750 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:36:00,750 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:36:01,884 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:36:01,886 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:36:01,886 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:36:02,148 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-three-2, mldn-three-1, mldn-three-0]
+2017-11-14 11:36:02,148 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:36:02,161 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 9
+2017-11-14 11:36:02,161 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 9
+2017-11-14 11:36:02,162 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-1, mldn-three-0]
+2017-11-14 11:36:02,164 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-2]
+2017-11-14 11:36:04,110 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 11:36:04,331 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:36:04,332 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:36:05,469 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 11:36:05,471 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 11:36:05,471 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:36:08,682 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-three-2]
+2017-11-14 11:36:08,682 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:36:08,743 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-three-1, mldn-three-0]
+2017-11-14 11:36:08,743 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:36:08,754 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 10
+2017-11-14 11:36:08,755 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-2]
+2017-11-14 11:36:08,755 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 10
+2017-11-14 11:36:08,755 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 10
+2017-11-14 11:36:08,756 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 11:36:08,757 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-1]
+2017-11-14 11:36:18,188 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:36:18,382 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:36:18,382 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:36:18,531 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 11:37:12,408 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-three-2]
+2017-11-14 11:37:12,409 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:37:12,479 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-three-0]
+2017-11-14 11:37:12,480 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 11:37:12,486 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 11
+2017-11-14 11:37:12,486 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 11
+2017-11-14 11:37:12,486 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-2]
+2017-11-14 11:37:12,486 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-1, mldn-three-0]
+2017-11-14 11:37:22,651 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 11:37:22,846 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 11:37:22,846 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 11:37:22,991 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 14:05:55,919 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:05:56,114 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:05:56,114 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:05:56,240 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,297 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,404 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,460 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,567 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,673 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,779 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,835 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,890 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:56,945 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,000 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,106 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,162 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,218 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,273 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,377 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,432 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,487 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,592 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,696 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,802 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,857 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,912 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:57,967 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,072 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,127 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,182 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,287 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,342 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,397 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,502 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,607 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,711 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,816 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,871 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,926 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:05:58,980 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Bootstrap broker kafka-single:9095 (id: -1 rack: null) disconnected
+2017-11-14 14:11:10,234 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:11:10,435 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:11:10,530 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:11:10,530 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:11:10,750 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:11:10,918 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 14:11:55,644 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:11:55,811 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:11:55,935 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:11:55,935 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:11:57,083 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 14:11:57,086 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 14:11:57,086 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:11:57,164 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 13
+2017-11-14 14:11:57,165 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 14:12:25,854 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:12:26,021 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:12:26,147 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:12:26,147 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:12:27,298 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 14:12:27,302 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 14:12:27,302 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:12:27,319 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 15
+2017-11-14 14:12:27,320 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 14:12:30,826 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:12:31,019 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:12:31,113 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:12:31,113 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:12:31,260 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 14:12:42,208 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:12:42,393 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:12:42,507 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:12:42,507 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:12:42,672 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 14:12:45,588 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:12:45,757 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:12:45,880 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:12:45,880 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:12:47,043 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 14:12:47,046 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 14:12:47,046 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:12:47,069 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 17
+2017-11-14 14:12:47,070 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 14:21:18,989 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Marking the coordinator kafka-single:9095 (id: 2147483647 rack: null) dead
+2017-11-14 14:21:20,094 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:21,246 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:22,497 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:23,907 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:25,709 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:27,560 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:29,764 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 14:21:32,198 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 740 : {mldn-three=INVALID_REPLICATION_FACTOR}
+2017-11-14 14:21:32,410 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 741 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:21:32,515 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 742 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:21:32,621 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 743 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:21:32,726 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 744 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:21:32,831 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 745 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:21:32,936 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 746 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 14:21:33,102 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 14:21:34,004 ERROR [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Offset commit failed on partition mldn-three-0 at offset 300: This is not the correct coordinator.
+2017-11-14 14:21:34,004 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Marking the coordinator kafka-single:9095 (id: 2147483647 rack: null) dead
+2017-11-14 14:21:34,103 WARN [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Asynchronous auto-commit of offsets {mldn-three-0=OffsetAndMetadata{offset=300, metadata=''}} failed: Offset commit failed with a retriable exception. You should retry committing offsets. The underlying error was: This is not the correct coordinator.
+2017-11-14 14:21:34,117 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 14:21:56,289 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:21:56,504 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:21:56,504 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:21:57,639 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9092 (id: 2147483647 rack: null)
+2017-11-14 14:21:57,641 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 14:21:57,641 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:21:58,316 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions [mldn-three-0]
+2017-11-14 14:21:58,316 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:21:58,344 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 18
+2017-11-14 14:21:58,344 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 14:21:58,346 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 18
+2017-11-14 14:21:58,347 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions []
+2017-11-14 14:22:08,169 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:22:08,351 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:22:08,446 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:22:08,446 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:22:08,611 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 14:22:17,055 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 14:22:17,055 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:22:17,068 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 19
+2017-11-14 14:22:17,070 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 14:30:00,755 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:30:00,977 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:30:01,074 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:30:01,074 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:30:01,222 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 1 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,342 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 3 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,446 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 4 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,550 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 5 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,653 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 6 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,757 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 7 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,861 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 8 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:01,964 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 9 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,073 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 10 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,177 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 11 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,280 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 12 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,383 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 13 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,486 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 14 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,589 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 15 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,693 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 16 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,795 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 17 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:02,898 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 18 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,002 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 19 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,104 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 20 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,208 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 21 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,311 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 22 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,416 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 23 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,522 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 24 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,628 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 25 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,731 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 26 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,834 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 27 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:03,937 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 28 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,040 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 29 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,142 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 30 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,247 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 31 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,350 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 32 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,457 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 33 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,561 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 34 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,664 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 35 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,767 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 36 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,870 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 37 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:04,974 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 38 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:05,076 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 39 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:05,180 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 40 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:05,283 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 41 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:05,386 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Error while fetching metadata with correlation id 42 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 14:30:44,340 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 14:30:44,547 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:30:44,649 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:30:44,649 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:30:44,830 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2017-11-14 14:31:08,609 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-2
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:31:08,779 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:31:08,904 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:31:08,904 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:31:24,855 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:31:25,024 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:31:25,149 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:31:25,149 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:31:26,321 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-14 14:31:26,328 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 14:31:26,328 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 14:31:26,397 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 21
+2017-11-14 14:31:26,398 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-14 14:33:21,149 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 14:33:21,317 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 14:33:21,454 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 14:33:21,454 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 14:33:22,597 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 2 : {mldn-three=TOPIC_AUTHORIZATION_FAILED}
+2017-11-14 15:27:35,194 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-cluster-a:9095, kafka-cluster-b:9095, kafka-cluster-c:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-14 15:27:35,382 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 15:27:35,519 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 15:27:35,519 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 15:27:37,800 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 4 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 15:27:38,120 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 7 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 15:27:38,234 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 10 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 15:27:38,368 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 11 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 15:27:38,582 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Error while fetching metadata with correlation id 13 : {mldn-three=LEADER_NOT_AVAILABLE}
+2017-11-14 15:27:39,551 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-cluster-c:9095 (id: 2147483645 rack: null)
+2017-11-14 15:27:39,557 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-14 15:27:39,558 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-14 15:27:39,701 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 1
+2017-11-14 15:27:39,703 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-2, mldn-three-1, mldn-three-0]
+2017-11-14 15:27:48,117 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-cluster-a:9095, kafka-cluster-b:9095, kafka-cluster-c:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-14 15:27:48,321 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-14 15:27:48,421 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-14 15:27:48,422 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-14 15:28:11,957 WARN [org.apache.kafka.clients.NetworkClient] - [Consumer clientId=consumer-1, groupId=group-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-14 15:28:15,588 WARN [org.apache.kafka.clients.NetworkClient] - [Producer clientId=producer-1] Connection to node 0 could not be established. Broker may not be available.
+2017-11-15 22:50:05,854 INFO [org.apache.kafka.clients.consumer.ConsumerConfig] - ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [kafka-single:9095]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group-1
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.IntegerDeserializer
+
+2017-11-15 22:50:06,405 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-15 22:50:06,749 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-15 22:50:06,749 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-15 22:50:09,534 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Discovered coordinator kafka-single:9095 (id: 2147483647 rack: null)
+2017-11-15 22:50:09,545 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Revoking previously assigned partitions []
+2017-11-15 22:50:09,546 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] (Re-)joining group
+2017-11-15 22:50:10,411 INFO [org.apache.kafka.clients.consumer.internals.AbstractCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Successfully joined group with generation 43
+2017-11-15 22:50:10,414 INFO [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] - [Consumer clientId=consumer-1, groupId=group-1] Setting newly assigned partitions [mldn-three-0]
+2017-11-15 22:50:17,449 INFO [org.apache.kafka.clients.producer.ProducerConfig] - ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [kafka-single:9095]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = PLAIN
+	security.protocol = SASL_PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.IntegerSerializer
+
+2017-11-15 22:50:18,155 INFO [org.apache.kafka.common.security.authenticator.AbstractLogin] - Successfully logged in.
+2017-11-15 22:50:18,499 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka version : 1.0.0
+2017-11-15 22:50:18,500 INFO [org.apache.kafka.common.utils.AppInfoParser] - Kafka commitId : aaa7af6d4a11b29d
+2017-11-15 22:53:39,827 INFO [org.apache.kafka.clients.producer.KafkaProducer] - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
